@@ -3,6 +3,12 @@
 <html>
 <head>
   <title>Title</title>
+  <style>
+    .hasOpener {
+      background: orangered;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <a href="#simple" target="_blank" id="simple">simple</a>
@@ -13,6 +19,9 @@
   <br>
   <script>
     document.write('Opener: ' + window.opener)
+    if (window.opener != null) {
+      document.body.className = 'hasOpener';
+    }
   </script>
 </body>
 </html>
