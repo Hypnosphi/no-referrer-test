@@ -38,7 +38,7 @@ const template = data => `
 <body>
   <table>
     <tr>
-      <th>Browser and platform</th>
+      <th>window.opener</th>
       ${data[0].suites[0].tests.map(({name}) => `<th>${name}</th>`).join(`
       `)}
     </tr>
